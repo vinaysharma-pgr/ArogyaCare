@@ -4,7 +4,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import {AuthProvider} from "./Context/AuthContext";
+import {AuthProvider} from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 import Dashboard from "./components/Dashboard";
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
 
       {/* Protected routes */}
       <Route
-        path="/"
+        path="/dashboard"
         element={
           <ProtectedRoute>
             <Dashboard />
