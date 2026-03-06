@@ -23,7 +23,7 @@ const router = createBrowserRouter(
       {/* Public routes */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
-      <Route path="/verify" element={<VerifyPage />} />
+      <Route path="/verify/:token" element={<VerifyPage />} />
 
       {/* Protected routes */}
       <Route
@@ -36,7 +36,7 @@ const router = createBrowserRouter(
       >
         <Route index element={<Frontpage />} />
         <Route path="mediBot" element={<Medibot />} />
-        <Route path="Doctors List" element={<Doctors />} />
+        <Route path="Doctors" element={<Doctors />} />
         <Route path="Medicine" element={<Medmain />} />
         <Route path="AboutMed" element={<MedicinePage />} />
       </Route>
